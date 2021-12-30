@@ -6,7 +6,7 @@
 ------------        Goto LINE 90 and change "50" to your desired SafeZone Radius.        ---------------------
 ------------        Goto LINE 130 to edit the Marker( Holographic circle.)               ---------------------
 --------------------------------------------------------------------------------------------------------------
--- Place your own coords here!
+-- GÜVENLİ BÖLGELERİ BURDAN YAZ
 local zones = {
 	{ ['x'] = 1847.916015625, ['y'] = 3675.8190917968, ['z'] = 33.767009735108},
 	{ ['x'] = -1688.43811035156, ['y'] = -1073.62536621094, ['z'] = 13.1521873474121 },
@@ -20,8 +20,7 @@ local closestZone = 1
 
 --------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------
--------                              Creating Blips at the locations. 							--------------
--------You can comment out this section if you dont want any blips showing the zones on the map.--------------
+                           BLİPS KURMAK VE LOCAL ZONE AYARLAMAK İÇİN  AŞAĞI BAK. 							-------------
 --------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------
 
@@ -36,7 +35,7 @@ Citizen.CreateThread(function()
 		SetBlipColour(szBlip, 2)  --Change the blip color: https://gtaforums.com/topic/864881-all-blip-color-ids-pictured/
 		SetBlipSprite(szBlip, 398) -- Change the blip itself: https://marekkraus.sk/gtav/blips/list.html
 		BeginTextCommandSetBlipName("STRING")
-		AddTextComponentString("SAFE ZONE") -- What it will say when you hover over the blip on your map.
+		AddTextComponentString("GÜVENLİ BÖLGE") -- MAPTA NE İSİMLİ GÖZÜKMESİNİ İSTİYORSUN.
 		EndTextCommandSetBlipName(szBlip)
 	end
 end)
